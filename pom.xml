@@ -11,6 +11,17 @@
 
     <description>Package alien 4 cloud with correct structure and scripts.</description>
 
+    <distributionManagement>
+        <repository>
+            <id>repo.opensource.fastconnect.org</id>
+            <url>https://fastconnect.org/maven/content/repositories/opensource</url>
+        </repository>
+        <snapshotRepository>
+            <id>repo.opensource.snapshot.fastconnect.org</id>
+            <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <java.version>1.7</java.version>
         <maven.compiler.version>2.3.2</maven.compiler.version>
