@@ -1,12 +1,11 @@
 package alien4cloud.packager;
 
-import alien4cloud.git.RepositoryManager;
-import alien4cloud.utils.FileUtil;
-
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Map;
+
+import alien4cloud.git.RepositoryManager;
+import alien4cloud.utils.FileUtil;
 
 /**
  * Utility that downloads the archives we want to package.
