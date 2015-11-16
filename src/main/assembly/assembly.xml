@@ -48,13 +48,19 @@
                 <include>**</include>
             </includes>
         </fileSet>
-        <fileSet>
-            <directory>target/archives</directory>
-            <outputDirectory>init/archives</outputDirectory>
-            <fileMode>0644</fileMode>
-            <includes>
-                <include>**</include>
-            </includes>
-        </fileSet>
     </fileSets>
+    <files>
+        <file>
+            <source>target/archives/tosca-normative-types.zip</source>
+            <outputDirectory>init/archives</outputDirectory>
+            <destName>alien-tosca-normative-types.zip</destName>
+            <fileMode>0644</fileMode>
+        </file>
+        <file>
+            <source>target/archives/tosca-normative-types.zip</source>
+            <outputDirectory>init/archives</outputDirectory>
+            <destName>alien-xtended-storage-types.zip</destName>
+            <fileMode>0644</fileMode>
+        </file>
+    </files>
 </assembly>
