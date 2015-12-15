@@ -57,7 +57,7 @@
             <fileMode>0644</fileMode>
         </file>
         <file>
-            <source>target/archives/tosca-normative-types.zip</source>
+            <source>target/archives/alien-extended-storage-types.zip</source>
             <outputDirectory>init/archives</outputDirectory>
             <destName>alien-xtended-storage-types.zip</destName>
             <fileMode>0644</fileMode>
