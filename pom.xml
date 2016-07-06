@@ -10,6 +10,10 @@
 
     <description>Package alien 4 cloud with correct structure and scripts.</description>
 
+    <scm>
+  		<connection>scm:git:https://github.com/alien4cloud/alien4cloud-dist.git</connection>
+  	</scm>
+
     <distributionManagement>
         <repository>
             <id>repo.opensource.fastconnect.org</id>
