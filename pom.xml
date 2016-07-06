@@ -4,11 +4,15 @@
 
     <groupId>alien4cloud</groupId>
     <artifactId>alien4cloud-dist</artifactId>
-    <version>1.2.0-RC1</version>
+    <version>1.3.0-SM1</version>
 
     <name>Alien 4 Cloud Distribution</name>
 
     <description>Package alien 4 cloud with correct structure and scripts.</description>
+
+    <scm>
+  		<connection>scm:git:https://github.com/alien4cloud/alien4cloud-dist.git</connection>
+  	</scm>
 
     <distributionManagement>
         <repository>
