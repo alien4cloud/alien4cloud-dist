@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>alien4cloud</groupId>
+        <artifactId>alien4cloud-parent</artifactId>
+        <version>1.3.0-SM3</version>
+    </parent>
 
-    <groupId>alien4cloud</groupId>
     <artifactId>alien4cloud-dist</artifactId>
-    <version>1.3.0-SM2</version>
+    <version>1.3.0-SM3</version>
     <name>Alien 4 Cloud Distribution</name>
 
     <description>Package alien 4 cloud with correct structure and scripts.</description>
@@ -23,11 +27,6 @@
             <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
-
-    <properties>
-        <java.version>1.7</java.version>
-        <maven.compiler.version>2.3.2</maven.compiler.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -49,9 +48,25 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>external.atlassian.jgitflow</groupId>
-                <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m3</version>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-javadoc-plugin</artifactId>
+              <version>2.9</version>
+              <executions>
+                <execution>
+                  <id>attach-javadocs</id>
+                  <goals>
+                    <goal>jar</goal>
+                  </goals>
+                  <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+              <groupId>external.atlassian.jgitflow</groupId>
+              <artifactId>jgitflow-maven-plugin</artifactId>
+              <version>1.0-m5.1-alien</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
