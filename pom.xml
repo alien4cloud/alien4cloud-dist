@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>alien4cloud-dist</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.4.0-SM4-SNAPSHOT</version>
     <name>Alien 4 Cloud Distribution</name>
 
     <description>Package alien 4 cloud with correct structure and scripts.</description>
