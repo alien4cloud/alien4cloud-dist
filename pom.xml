@@ -4,11 +4,11 @@
   <parent>
     <groupId>alien4cloud</groupId>
     <artifactId>alien4cloud-parent</artifactId>
-    <version>1.4.4-SNAPSHOT</version>
+    <version>1.4.3.1</version>
   </parent>
 
   <artifactId>alien4cloud-dist</artifactId>
-  <version>1.4.4-SNAPSHOT</version>
+  <version>1.4.3.1</version>
   <name>Alien 4 Cloud Distribution</name>
 
   <description>Package alien 4 cloud with correct structure and scripts.</description>
@@ -27,6 +27,10 @@
       <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
+
+  <properties>
+    <plugins.version>1.4.3</plugins.version>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -119,17 +123,17 @@
                 <artifactItem>
                   <groupId>alien4cloud</groupId>
                   <artifactId>alien4cloud-http-repository-plugin</artifactId>
-                  <version>${project.version}</version>
+                  <version>${plugins.version}</version>
                   <type>zip</type>
-                  <destFileName>alien4cloud-http-repository-plugin-${project.version}.zip</destFileName>
+                  <destFileName>alien4cloud-http-repository-plugin-${plugins.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>alien4cloud</groupId>
                   <artifactId>alien4cloud-marathon-plugin</artifactId>
-                  <version>${project.version}</version>
+                  <version>${plugins.version}</version>
                   <type>zip</type>
-                  <destFileName>alien4cloud-marathon-plugin-${project.version}.zip</destFileName>
+                  <destFileName>alien4cloud-marathon-plugin-${plugins.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
               </artifactItems>
