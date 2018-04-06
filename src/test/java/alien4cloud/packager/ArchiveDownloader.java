@@ -18,10 +18,10 @@ public class ArchiveDownloader {
         Path zipDirectory = buildDirectory.resolve("archives");
 
         RepositoryManager.cloneOrCheckout(gitDirectory, "https://github.com/alien4cloud/tosca-normative-types.git", "2.0.0", "tosca-normative-types");
-        RepositoryManager.cloneOrCheckout(gitDirectory, "https://github.com/alien4cloud/alien4cloud-extended-types.git", "2.0.0",
+        RepositoryManager.cloneOrCheckout(gitDirectory, "https://github.com/alien4cloud/alien4cloud-extended-types.git", "master",
                 "alien4cloud-extended-types");
                 // docker types
-        RepositoryManager.cloneOrCheckout(gitDirectory, "https://github.com/alien4cloud/docker-tosca-types.git", "2.0.0",
+        RepositoryManager.cloneOrCheckout(gitDirectory, "https://github.com/alien4cloud/docker-tosca-types.git", "master",
                 "docker-tosca-types");
         // Do we want to initialize alien with sample topology.
         // repositoryManager.cloneOrCheckout(gitDirectory, "https://github.com/alien4cloud/samples.git", "master", "samples");
