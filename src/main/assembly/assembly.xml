@@ -53,13 +53,25 @@
         <file>
             <source>target/archives/tosca-normative-types.zip</source>
             <outputDirectory>init/archives</outputDirectory>
-            <destName>alien-tosca-normative-types.zip</destName>
+            <destName>1-alien-tosca-normative-types.zip</destName>
             <fileMode>0644</fileMode>
         </file>
         <file>
             <source>target/archives/alien-extended-storage-types.zip</source>
             <outputDirectory>init/archives</outputDirectory>
-            <destName>alien-xtended-storage-types.zip</destName>
+            <destName>2-alien-extended-storage-types.zip</destName>
+            <fileMode>0644</fileMode>
+        </file>
+        <file>
+            <source>target/archives/alien-base-types.zip</source>
+            <outputDirectory>init/archives</outputDirectory>
+            <destName>3-alien-base-types.zip</destName>
+            <fileMode>0644</fileMode>
+        </file>
+        <file>
+            <source>target/archives/docker-tosca-types.zip</source>
+            <outputDirectory>init/archives</outputDirectory>
+            <destName>4-docker-tosca-types.zip</destName>
             <fileMode>0644</fileMode>
         </file>
     </files>
