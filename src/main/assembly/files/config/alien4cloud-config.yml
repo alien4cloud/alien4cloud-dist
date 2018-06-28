@@ -128,3 +128,7 @@ audit:
 
 logs_deployment_appender:
   enable: false
+
+languages:
+  default: fr-fr
+  prefix: locale
