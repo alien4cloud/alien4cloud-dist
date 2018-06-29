@@ -130,5 +130,5 @@ logs_deployment_appender:
   enable: false
 
 languages:
-  default: fr-fr
+  default: en-us
   prefix: locale
