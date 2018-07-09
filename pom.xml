@@ -4,11 +4,11 @@
   <parent>
     <groupId>alien4cloud</groupId>
     <artifactId>alien4cloud-parent</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0-SM5</version>
   </parent>
 
   <artifactId>alien4cloud-dist</artifactId>
-  <version>2.0.0</version>
+  <version>2.1.0-SM5</version>
   <name>Alien 4 Cloud Distribution</name>
 
   <description>Package alien 4 cloud with correct structure and scripts.</description>
@@ -124,20 +124,28 @@
                   <destFileName>alien4cloud-http-repository-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
-                <artifactItem>
+                <!-- <artifactItem>
                   <groupId>alien4cloud</groupId>
                   <artifactId>alien4cloud-marathon-plugin</artifactId>
                   <version>${project.version}</version>
                   <type>zip</type>
                   <destFileName>alien4cloud-marathon-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
-                </artifactItem>
+                </artifactItem> -->
                 <artifactItem>
                   <groupId>alien4cloud</groupId>
                   <artifactId>alien4cloud-kubernetes-plugin</artifactId>
                   <version>${project.version}</version>
                   <type>zip</type>
                   <destFileName>alien4cloud-kubernetes-plugin-${project.version}.zip</destFileName>
+                  <outputDirectory>${project.build.directory}/plugins</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>alien4cloud</groupId>
+                  <artifactId>alien4cloud-yorc-plugin</artifactId>
+                  <version>3.0.0-2.1.0-SM5</version>
+                  <type>zip</type>
+                  <destFileName>alien4cloud-yorc-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
               </artifactItems>
@@ -158,6 +166,19 @@
             <phase>package</phase>
             <goals>
               <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>templating-maven-plugin</artifactId>
+        <version>1.0-alpha-3</version>
+        <executions>
+          <execution>
+            <id>filter-src</id>
+            <goals>
+              <goal>filter-sources</goal>
             </goals>
           </execution>
         </executions>
