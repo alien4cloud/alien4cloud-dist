@@ -140,14 +140,14 @@
                   <destFileName>alien4cloud-kubernetes-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
-                <!-- <artifactItem>
+                <artifactItem>
                   <groupId>alien4cloud</groupId>
                   <artifactId>alien4cloud-yorc-plugin</artifactId>
-                  <version>3.0.0-2.1.0-SM5</version>
+                  <version>3.0.0-SNAPSHOT</version>
                   <type>zip</type>
                   <destFileName>alien4cloud-yorc-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
-                </artifactItem> -->
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>
