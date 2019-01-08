@@ -140,6 +140,7 @@
                   <destFileName>alien4cloud-kubernetes-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
+                <!--
                 <artifactItem>
                   <groupId>alien4cloud</groupId>
                   <artifactId>alien4cloud-yorc-plugin</artifactId>
@@ -148,6 +149,7 @@
                   <destFileName>alien4cloud-yorc-plugin-${project.version}.zip</destFileName>
                   <outputDirectory>${project.build.directory}/plugins</outputDirectory>
                 </artifactItem>
+                -->
               </artifactItems>
             </configuration>
           </execution>
