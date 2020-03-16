@@ -30,7 +30,7 @@
 
   <properties>
     <tosca-normative-types.version>1.0.0-ALIEN20</tosca-normative-types.version>
-    <alien4cloud.extended-types.version>3.0</alien4cloud.extended-types.version>
+    <alien4cloud.extended-types.version>3.0.0</alien4cloud.extended-types.version>
   </properties>
 
   <dependencies>
